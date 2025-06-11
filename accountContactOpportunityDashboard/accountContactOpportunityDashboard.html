@@ -1,0 +1,21 @@
+<template>
+  <lightning-card title="Accounts with Contact Counts">
+    <lightning-datatable
+      key-field="id"
+      data={accounts}
+      columns={accountColumns}
+      onrowaction={handleRowAction}
+    ></lightning-datatable>
+  </lightning-card>
+<template if:true={doesWireOppNeedsCall}>
+  <template if:true={opportunityToDisplay.length}>
+    <lightning-card title={cardTitle}>
+      <lightning-datatable
+        key-field="id"
+        data={opportunityToDisplay}
+        columns={opportunityColumns}
+      ></lightning-datatable>
+    </lightning-card>
+  </template>
+  </template>
+</template>
