@@ -41,7 +41,7 @@ Expected to display:
 
 ---
 
-## 🚀 Features
+## Features
 
 * Display list of Accounts with Phone and Contact Count
 * etch and display Opportunities based on selected Account
